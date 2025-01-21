@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAE Arquitecto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.ibb.co/BVYGBkW/logo.png" type="image/png"> <!-- Reemplaza con la URL de tu favicon real -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General */
+        body {
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            background-color: #F4F5F7;
+            color: #333;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #272537;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        /* Menú de navegación */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: #E3BF76;
+            padding: 12px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            color: #272537;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 8px; /* Espacio entre el icono y el texto */
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #606977;
+            transform: scale(1.05);
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 70px 20px;
+            background-color: #D1DCE2;
+            text-align: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .hero img {
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        .hero-text {
+            flex: 1;
+            padding: 20px;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .hero-text h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 50px;
+            color: #272537;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            color: #606977;
+            margin-bottom: 25px;
+        }
+
+        .hero-text a {
+            display: inline-block;
+            background-color: #E5D817;
+            color: #272537;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-text a:hover {
+            background-color: #d3c617;
+        }
+
+        /* Secciones */
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section.bg-light {
+            background-color: #E3BF76;
+        }
+
+        .section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: #272537;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            color: #606977;
+            font-size: 18px;
+        }
+
+        /* Sección de Productos */
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px; /* Establecer altura fija para las imágenes */
+            object-fit: cover; /* Asegura que las imágenes mantengan la proporción sin deformarse */
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            color: #272537;
+        }
+
+        .product-card p {
+            color: #606977;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #272537;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BAE Arquitecto</h1>
+    </header>
+
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i>Inicio</a>
+        <a href="galeria.html"><i class="fas fa-images"></i>Galería</a>
+        <a href="sobre-mi.html"><i class="fas fa-user"></i>Sobre Mí</a>
+        <a href="contacto.html"><i class="fas fa-envelope"></i>Contacto</a>
+    </nav>
+
+    <section class="hero">
+        <img src="https://i.ibb.co/BVYGBkW/logo.png">
+        <div class="hero-text">
+            <h1>Bienvenidos a BAE Arquitecto</h1>
+            <p>Con más de 20 años de trayectoria en el sector, me especializo en diseñar y construir proyectos innovadores que no solo cumplen con los más altos estándares de calidad, sino que también priorizan la sostenibilidad y el respeto por el medio ambiente.</p>
+            <a href="contacto.html">Contáctame</a>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <h2>Mis Proyectos</h2>
+        <p>Descubre algunos de mis proyectos destacados que reflejan mi pasión por la arquitectura.</p>
+    </section>
+
+    <section class="products">
+        <div class="product-card">
+            <img src="trabajo1.jpg" alt="Proyecto 1">
+            <h3>Proyecto 1</h3>
+            <p>Descripción del proyecto.</p>
+        </div>
+        <div class="product-card">
+            <img src="trabajo2.jpg" alt="Proyecto 2">
+            <h3>Proyecto 2</h3>
+            <p>Descripción del proyecto.</p>
+        </div>
+        <div class="product-card">
+            <img src="trabajo3.jpg" alt="Proyecto 3">
+            <h3>Proyecto 3</h3>
+            <p>Descripción del proyecto.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 BAE Arquitecto - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

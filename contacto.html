@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BAE Arquitecto</title>
+    <title>Contacto - BAE Arquitecto</title>
+    
+    <!-- Fuentes y Estilos -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://i.ibb.co/BVYGBkW/logo.png" type="image/png"> <!-- Reemplaza con la URL de tu favicon real -->
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://i.ibb.co/BVYGBkW/logo.png" type="image/png">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <style>
         /* General */
         body {
@@ -48,7 +54,7 @@
             font-family: 'Montserrat', sans-serif;
             display: flex;
             align-items: center;
-            gap: 8px; /* Espacio entre el icono y el texto */
+            gap: 8px;
             transition: color 0.3s ease, transform 0.3s ease;
         }
 
@@ -57,120 +63,102 @@
             transform: scale(1.05);
         }
 
-        /* Hero Section */
-        .hero {
+        /* Sección de contacto */
+        .contact {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             padding: 70px 20px;
             background-color: #D1DCE2;
             text-align: center;
-            gap: 50px;
-            flex-wrap: wrap;
         }
 
-        .hero img {
-            width: 80%;
-            max-width: 500px;
-            border-radius: 10px;
-        }
-
-        .hero-text {
-            flex: 1;
-            padding: 20px;
-            max-width: 600px;
-            text-align: left;
-        }
-
-        .hero-text h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 50px;
-            color: #272537;
-            margin-bottom: 10px;
-        }
-
-        .hero-text p {
-            font-size: 18px;
-            color: #606977;
-            margin-bottom: 25px;
-        }
-
-        .hero-text a {
-            display: inline-block;
-            background-color: #E5D817;
-            color: #272537;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .hero-text a:hover {
-            background-color: #d3c617;
-        }
-
-        /* Secciones */
-        .section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .section.bg-light {
-            background-color: #E3BF76;
-        }
-
-        .section h2 {
+        .contact h2 {
             font-family: 'Playfair Display', serif;
             font-size: 36px;
             color: #272537;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
-        .section p {
-            color: #606977;
+        .contact p {
             font-size: 18px;
+            color: #606977;
+            margin-bottom: 25px;
+            line-height: 1.6;
         }
 
-        /* Sección de Productos */
-        .products {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-top: 30px;
-        }
-
-        .product-card {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            width: 250px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .product-card img {
+        .contact-form {
+            background: #F4F5F7;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             width: 100%;
-            height: 250px; /* Establecer altura fija para las imágenes */
-            object-fit: cover; /* Asegura que las imágenes mantengan la proporción sin deformarse */
-            border-radius: 10px;
-            margin-bottom: 15px;
+            max-width: 600px;
         }
 
-        .product-card h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
+        .contact-form label {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 8px;
             color: #272537;
         }
 
-        .product-card p {
-            color: #606977;
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
         }
 
-        .product-card:hover {
-            transform: translateY(-10px);
+        .contact-form textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        .contact-form button {
+            background-color: #E3BF76;
+            color: #272537;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #C8A960;
+        }
+
+        .form-feedback {
+            margin-top: 15px;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            font-size: 24px;
+            color: #272537;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #E5D817;
         }
 
         /* Footer */
@@ -179,6 +167,7 @@
             color: white;
             text-align: center;
             padding: 20px;
+            margin: 0;
         }
 
         footer p {
@@ -188,10 +177,12 @@
     </style>
 </head>
 <body>
+    <!-- Encabezado -->
     <header>
         <h1>BAE Arquitecto</h1>
     </header>
 
+    <!-- Menú de navegación -->
     <nav>
         <a href="index.html"><i class="fas fa-home"></i>Inicio</a>
         <a href="galeria.html"><i class="fas fa-images"></i>Galería</a>
@@ -199,40 +190,31 @@
         <a href="contacto.html"><i class="fas fa-envelope"></i>Contacto</a>
     </nav>
 
-    <section class="hero">
-        <img src="https://i.ibb.co/BVYGBkW/logo.png">
-        <div class="hero-text">
-            <h1>Bienvenidos a BAE Arquitecto</h1>
-            <p>Con más de 20 años de trayectoria en el sector, me especializo en diseñar y construir proyectos innovadores que no solo cumplen con los más altos estándares de calidad, sino que también priorizan la sostenibilidad y el respeto por el medio ambiente.</p>
-            <a href="contacto.html">Contáctame</a>
+    <!-- Sección de contacto -->
+    <section class="contact">
+        <h2>Contáctame</h2>
+        <p>Si tienes alguna consulta, no dudes en ponerte en contacto con nosotros a través de nuestras redes sociales o por correo electrónico.</p>
+
+        <p id="formFeedback" class="form-feedback"></p>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:" title="Correo Electrónico">
+                <i class="fas fa-envelope"></i>
+            </a>
         </div>
     </section>
 
-    <section class="section bg-light">
-        <h2>Mis Proyectos</h2>
-        <p>Descubre algunos de mis proyectos destacados que reflejan mi pasión por la arquitectura.</p>
-    </section>
-
-    <section class="products">
-        <div class="product-card">
-            <img src="trabajo1.jpg" alt="Proyecto 1">
-            <h3>Proyecto 1</h3>
-            <p>Descripción del proyecto.</p>
-        </div>
-        <div class="product-card">
-            <img src="trabajo2.jpg" alt="Proyecto 2">
-            <h3>Proyecto 2</h3>
-            <p>Descripción del proyecto.</p>
-        </div>
-        <div class="product-card">
-            <img src="trabajo3.jpg" alt="Proyecto 3">
-            <h3>Proyecto 3</h3>
-            <p>Descripción del proyecto.</p>
-        </div>
-    </section>
-
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 BAE Arquitecto - Todos los derechos reservados</p>
     </footer>
+
 </body>
 </html>
+

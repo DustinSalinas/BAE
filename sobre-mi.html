@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - BAE Arquitecto</title>
+    
+    <!-- Fuentes y Estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (para los iconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://i.ibb.co/BVYGBkW/logo.png" type="image/png">
+    
+    <style>
+        /* General */
+        body {
+            margin: 0;
+            font-family: 'Lato', sans-serif; /* Fuente principal para texto */
+            background-color: #F4F5F7; /* Fondo neutro */
+            color: #333; /* Texto oscuro */
+            padding-bottom: 0; /* Eliminar relleno al final del cuerpo */
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #272537; /* Fondo oscuro */
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif; /* Fuente elegante para título */
+            font-size: 42px;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        /* Menú de navegación */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: #E3BF76; /* Beige */
+            padding: 12px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            color: #272537;
+            font-family: 'Montserrat', sans-serif; /* Fuente para los enlaces del menú */
+            display: flex;
+            align-items: center;
+            gap: 8px; /* Espacio entre el icono y el texto */
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #606977; /* Gris suave */
+            transform: scale(1.05);
+        }
+
+        /* Sección "Sobre Nosotros" */
+        .about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 70px 20px;
+            background-color: #D1DCE2; /* Fondo azul claro */
+            flex-wrap: wrap; /* Asegura que la imagen y el texto se ajusten en dispositivos pequeños */
+        }
+
+        .about img {
+            width: 45%;
+            border-radius: 10px;
+            max-width: 100%;
+            object-fit: cover; /* Hace que la imagen cubra el área sin deformarse */
+        }
+
+        .about-text {
+            width: 50%;
+            text-align: justify; /* Justificar el texto */
+            padding-left: 30px; /* Espacio entre la imagen y el texto */
+            padding-right: 30px; /* Espacio adicional a la derecha para evitar que el texto quede pegado */
+            box-sizing: border-box; /* Asegura que el padding no haga que el contenido se desborde */
+        }
+
+        /* Alinear el texto y centrarlo en pantallas pequeñas */
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-text {
+                width: 100%;
+                text-align: justify; /* Mantener el texto justificado en pantallas pequeñas */
+                padding-left: 20px;
+                padding-right: 20px; /* Agregar un poco de relleno en pantallas pequeñas */
+            }
+
+            .about h2 {
+                font-size: 30px;
+            }
+
+            .about p {
+                font-size: 16px;
+            }
+        }
+
+        .about h2 {
+            font-family: 'Playfair Display', serif; /* Fuente elegante para subtítulos */
+            font-size: 36px;
+            color: #272537;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 18px;
+            color: #606977; /* Gris suave */
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .about a {
+            display: inline-block;
+            background-color: #E5D817; /* Botón amarillo */
+            color: #272537;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .about a:hover {
+            background-color: #d3c617; /* Amarillo más oscuro */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #272537;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 0; /* Eliminar margen en el footer */
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>BAE Arquitecto</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i>Inicio</a>
+        <a href="galeria.html"><i class="fas fa-images"></i>Galería</a>
+        <a href="sobre-mi.html"><i class="fas fa-user"></i>Sobre Mí</a>
+        <a href="contacto.html"><i class="fas fa-envelope"></i>Contacto</a>
+    </nav>
+
+    <!-- Sección "Sobre Mí" -->
+    <section class="about">
+        <img src="https://via.placeholder.com/400" alt="Proyecto arquitectónico moderno diseñado por BAE Arquitecto">
+        <div class="about-text">
+            <h2>Sobre Mí</h2>
+            <p>Soy un arquitecto dedicado a diseñar espacios únicos que combinan estética y funcionalidad. Mi pasión es crear ambientes que reflejen la personalidad y las necesidades de cada cliente, buscando siempre la armonía entre diseño, confort y sostenibilidad.</p>
+            <a href="contacto.html">Contáctame</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 BAE Arquitecto - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

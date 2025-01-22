@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - BAE Arquitecto</title>
+    
+    <!-- Fuentes y Estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://i.ibb.co/BVYGBkW/logo.png" type="image/png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* General */
+        body {
+            margin: 0;
+            font-family: 'Lato', sans-serif; /* Fuente principal para texto */
+            background-color: #F4F5F7; /* Fondo neutro */
+            color: #333; /* Texto oscuro */
+            padding-bottom: 0; /* Eliminar relleno al final del cuerpo */
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #272537; /* Fondo oscuro */
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif; /* Fuente elegante para título */
+            font-size: 42px;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        /* Menú de navegación */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: #E3BF76; /* Beige */
+            padding: 12px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            color: #272537;
+            font-family: 'Montserrat', sans-serif; /* Fuente para los enlaces del menú */
+            display: flex;
+            align-items: center;
+            gap: 8px; /* Espacio entre el icono y el texto */
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #606977; /* Gris suave */
+            transform: scale(1.05);
+        }
+
+        /* Sección de Galería */
+        .gallery {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #D1DCE2; /* Fondo azul claro para la galería */
+        }
+
+        .gallery h2 {
+            font-family: 'Playfair Display', serif; /* Fuente elegante para el título */
+            font-size: 36px;
+            color: #272537;
+            margin-bottom: 30px;
+        }
+
+        .gallery .images {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        iframe:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #272537; /* Fondo oscuro */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 0; /* Eliminar margen en el footer */
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .gallery img {
+                width: 100%;
+                max-width: 500px;
+            }
+
+            iframe {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>BAE Arquitecto</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i>Inicio</a>
+        <a href="galeria.html"><i class="fas fa-images"></i>Galería</a>
+        <a href="sobre-mi.html"><i class="fas fa-user"></i>Sobre Mí</a>
+        <a href="contacto.html"><i class="fas fa-envelope"></i>Contacto</a>
+    </nav>
+
+    <!-- Sección de Galería -->
+    <section class="gallery">
+        <h2>Nuestra Galería</h2>
+        <div class="images">
+            <img src="trabajo1.jpg" alt="Imagen 1">
+            <img src="trabajo2.jpg" alt="Imagen 2">
+            <img src="trabajo3.jpg" alt="Imagen 3">
+            <iframe src="https://www.youtube.com/embed/qLJmFyruAZs" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 BAE Arquitecto - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
